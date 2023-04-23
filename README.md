@@ -6,7 +6,7 @@
   
   This app is designed to give developers a platform to share and discuss their code or experience. Let everyone knows your thought by posting a post or leaving a comment under other developers' post!
 
-  [App Link](https://lit-oasis-88637.herokuapp.com/)
+  [App Link](https://protected-badlands-49620.herokuapp.com/)
   
   ## Table of Contents
   
