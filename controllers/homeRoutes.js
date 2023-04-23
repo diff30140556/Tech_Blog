@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
     const posts = postData.map((post) =>
       post.get({ plain: true })
     );
-    res.status(200).render('homePage',{
+    res.status(200).render('homepage',{
       posts,
     });
   } catch (err) {
@@ -22,7 +22,6 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 // single post page, get specific post
 router.get('/post/:id', async (req, res) => {
