@@ -1,0 +1,26 @@
+{{!-- <h1 class="text-center title">The Tech Blog</h1> --}}
+<div class="main-post">
+  <div class="card-header">
+    <h2 class="card-title">{{postDetail.title}}</h2>
+    <h4 class="post-date">Post by {{postDetail.user.user_name}} on {{format_date postDetail.updatedAt}}</h4>
+  </div>
+  <div class="card-content">
+    <p class="text-content">{{postDetail.content}}</p>
+  </div>
+</div>
+
+<ul class="postList margin-auto">
+  {{#each postDetail.comments }}
+  {{> commentDetail}}
+  {{/each}}
+</ul>
+
+<form class="comment-form margin-auto">
+  <label for="comment">Comment</label>
+  <textarea class="comment-textarea" name="comment" id="comment" placeholder="Leave a comment..." required></textarea>
+  <button class="btn waves-effect waves-light margin-auto d-block" type="submit" name="action">
+    Leave Comment <i class="material-icons right">send</i>
+  </button>
+</form>
+
+<script src="/js/leaveComment.js"></script>

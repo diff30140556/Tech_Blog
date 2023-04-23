@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "user_name": "John Smith",
+    "email": "john_smith@example.com",
+    "password": "password1"
+  },
+  {
+    "id": 2,
+    "user_name": "Jane Johnson",
+    "email": "jane_johnson@example.com",
+    "password": "password2"
+  },
+  {
+    "id": 3,
+    "user_name": "Robert Lee",
+    "email": "robert_lee@example.com",
+    "password": "password3"
+  },
+  {
+    "id": 4,
+    "user_name": "Sarah Kim",
+    "email": "sarah_kim@example.com",
+    "password": "password4"
+  }
+]
