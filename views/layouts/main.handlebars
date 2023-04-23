@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog</title>
+  {{!--
+  <link rel="icon" href="https://i.imgur.com/fI0m9kZ.png">
+  <link rel="short icon" href="https://i.imgur.com/fI0m9kZ.png"> --}}
+  <link rel="stylesheet" href="/css/jass.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  {{!-- custom CSS --}}
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="logo brand-logo">Tech Blog</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+
+            {{#if logged_in}}
+            <li><a href="#" id="logout">Log Out</a></li>
+            {{else}}
+            <li><a href="/logIn">Log In</a></li>
+            {{/if}}
+
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/">Home</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+
+        {{#if logged_in}}
+        <li><a href="#" id="logout">Log Out</a></li>
+        {{else}}
+        <li><a href="/logIn">Log In</a></li>
+        {{/if}}
+        
+      </ul>
+    </header>
+
+    <main>
+      <div class="container content">
+        {{{ body }}}
+      </div>
+      <!-- Render the sub layout -->
+    </main>
+
+    <footer class="page-footer text-center">
+      <div class="footer-copyright">
+        <div class="container text-center">
+          ©2023 Tech Blog - All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    </main>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    {{!-- typewriter CDN --}}
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Render logout and initialize script for logged in users only -->
+    {{#if logged_in}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

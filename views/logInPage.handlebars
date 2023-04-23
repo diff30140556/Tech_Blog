@@ -1,0 +1,62 @@
+<div class="valign-wrapper">
+
+  <div class="row login-form">
+    <form class="col s12 logInForm" id="logInForm">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <input id="email-login" name="email" type="email" class="validate" required>
+        <label for="email-login">Email Address</label>
+      </div>
+
+      <div class="input-field col s12">
+        <i class="material-icons prefix">lock</i>
+        <input id="password-login" name="password" type="password" class="validate" required>
+        <label for="password-login">Password</label>
+      </div>
+
+      <div class="col s12">
+        <p class="text-center register-text">Don't have an account? <a class="signUp-toggle" href="#">Register one now!</a></p>
+
+        <p class="alertMessage text-center red-text"></p>
+      </div>
+      <button class="btn waves-effect waves-light margin-auto d-block" type="submit" name="action">Log In
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+
+  <div class="row signUp-form">
+    <form class="col s12 signUpForm display-none" id="signUpForm">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">person</i>
+        <input id="user-name" name="user" type="text" class="validate" required>
+        <label for="user-name">User Name</label>
+      </div>
+
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <input id="email-signUp" name="email" type="email" class="validate" required>
+        <label for="email-signUp">Email Address</label>
+      </div>
+
+      <div class="input-field col s12">
+        <i class="material-icons prefix">lock</i>
+        <input id="password-signUp" name="password" type="password" class="validate" required>
+        <label for="password-signUp">Password</label>
+      </div>
+
+      <div class="col s12">
+        <p class="text-center register-text">Have an account? <a class="signIn-toggle" href="#">Sign in now!</a></p>
+
+        <p class="alertMessage text-center red-text"></p>
+      </div>
+      <button class="btn waves-effect waves-light margin-auto d-block" type="submit" name="action">Sign Up
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+</div>
+
+
+
+<script src="/js/login.js"></script>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+/* header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+} */
+
+a:hover{
+  text-decoration: none;
+  color: #000;
+}
+
+body{
+  position: relative;
+}
+
+header{
+  z-index: 100;
+}
+
+.content{
+  min-height: calc(100vh - 70px);
+  padding: 100px 0;
+  position: relative;
+}
+
+.postList{
+  width: 90%;
+}
+
+.list-item{
+  margin-bottom: 40px;
+}
+
+.card-title{
+  font-size: 35px;
+}
+
+.post-date{
+  font-size: 14px;
+}
+
+.post-card{
+  color: #000;
+}
+.post-card h2,
+.main-post h2,
+.card-header h4{
+  margin: 0;
+}
+.post-card:hover h2{
+  color: #0244f9;
+}
+
+.card-header{
+  background: #9c9c9c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
+.card-content{
+  border: 1px solid #000;
+  border-top: 0;
+  padding: 10px 20px;
+}
+.text-content{
+  font-size: 18px;
+}
+
+.d-block{
+  display: block;
+}
+
+.margin-auto{
+  margin: 0 auto;
+}
+
+.title{
+  margin-top: 0;
+  font-family: 'Rancho','Poppins', cursive;
+  font-size: clamp(4rem, 10vw, 7rem);
+  /* font-size: 5vw; */
+  word-spacing: 1rem;
+  letter-spacing: 0.4rem;
+}
+
+/* .register-text{
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  margin: 20px 0 30px 0;
+} */
+
+.register-text a:hover{
+  color: rgb(0, 215, 165);
+}
+
+.fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+}
+
+.sidenav-overlay{
+  z-index: 90;
+}
+
+
+.page-footer{
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-family: 'Rancho','Poppins', cursive;
+  font-size: clamp(4rem, 10vw, 7rem);
+  letter-spacing: 0.4rem;
+}
+
+.main-post{
+  margin-bottom: 60px;
+}
+
+.comment-header{
+  height: 30px;
+}
+
+.comment-form{
+  width: 80%;
+}
+
+.comment-textarea,
+.content-textarea {
+  resize: none;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.create-new-post-section {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 50px;
+}
+
+.d-table{
+  display: table;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-group button {
+  margin: 0 15px;
+}
+
+.del-btn {
+  background-color: #fa5353;
+}
+.del-btn:hover {
+  background-color: #f86969;
+}
+
+.del-btn:focus {
+  background-color: #d03131;
+}

@@ -1,0 +1,17 @@
+<h2 class="text-center title">My Dashboard</h2>
+
+{{#if isAny}}
+<ul class="margin-auto">
+  {{#each myPosts }}
+  {{> myPostDetail}}
+  {{/each}}
+</ul>
+{{else}}
+<h4 class="text-center">You have no post yet.</h4>
+{{/if}}
+
+<div class="create-new-post-section">
+  <a href="/dashboard/newPost" class="btn waves-effect waves-light margin-auto d-table">
+    Create New Post <i class="material-icons right">add</i>
+  </a>
+</div>

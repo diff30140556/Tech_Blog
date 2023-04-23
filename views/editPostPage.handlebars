@@ -1,0 +1,42 @@
+<div class="post-card">
+  <div class="card-header">
+    <h4>
+    {{#if isNewPost}}
+    Create New Post
+    {{else}}
+    Edit Post
+    {{/if}}
+    </h4>
+  </div>
+  <div class="card-content">
+    <form class="{{#if isNewPost}}post-form{{else}}update-form{{/if}} margin-auto">
+
+      <label for="title">Title</label>
+      <input class="title-input" name="title" id="title" placeholder="Post Title..." required value="{{#if isNePost}} {{else}}{{postDetail.title}}{{/if}}"></input>
+
+      <label for="content">Content</label>
+      <textarea class="content-textarea" name="content" id="content" placeholder="Content..." required>{{#if isiNewPost}}{{else}}{{postDetail.content}}{{/if}}</textarea>
+
+      {{#if isNewPost}}
+      <button class="btn waves-effect waves-light margin-auto d-block" type="submit" name="action">
+        Create New Post <i class="material-icons right">add</i>
+      </button>
+      {{else}}
+      <div class="btn-group">
+        <button class="btn waves-effect waves-light" type="submit" name="action">
+          Update Post <i class="material-icons right">sync</i>
+        </button>
+        <button class="del-btn btn waves-effect waves-light" type="button">
+          Delete Post <i class="material-icons right">delete</i>
+        </button>
+      </div>
+      {{/if}}
+    </form>
+  </div>
+</div>
+
+{{#if isNewPost}}
+<script src="/js/newPost.js"></script>
+{{else}}
+<script src="/js/editPost.js"></script>
+{{/if}}
