@@ -23,6 +23,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+
 // single post page, get specific post
 router.get('/post/:id', async (req, res) => {
   try {
